@@ -1,0 +1,308 @@
+/*
+@import url(conocimientos.css);
+@import url(proyectos.css);
+@import url(contacto.css);
+@import url(footer.css);
+*/
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  /*  background-color: rgb(175, 174, 174);*/
+    background-image: url(imagenes/cherry-blossom-6068004_1280.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+h2{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+/*    color: blueviolet; */
+    color: #445ee5;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+h3{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #445ee5;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 9px;
+    }
+a :hover{
+    background-color:rgb(152, 47, 140);    
+}
+
+.contenedor{
+   /* border: 2px solid rgba(255, 255, 255, 0);*/
+    
+}
+
+/*HEADER*/
+.header{
+    height: 100px;
+    /*border: 2px solid rgb(12, 69, 226);*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    background: rgb(255, 158, 194,0.95);
+    color: #ffffff;
+    padding: 0 50px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+.menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    /*cursor: pointer;*/
+    padding: 0.5rem;
+    border-radius: 9px;
+ /*   transition: 0.4s;*/
+}
+
+.mostrar-menu, 
+.esconder-menu{
+    /*font-size: 30px;*/
+    cursor: pointer;
+    display: none;
+   /* transition: 0.4s;*/
+}
+/*.mostrar-menu{
+    order: 1;
+}
+*/
+
+.menu a:hover,
+.mostrar-menu,
+.esconder-menu{
+    background-color:rgb(152, 47, 140);
+   /* font-size: 30px;*/
+}
+
+#check{
+    display: none;
+}
+
+/*BANNER*/
+.banner{
+    /*height: 100vh;*/
+   /* border: 2px solid rgb(243, 9, 9);*/
+   /* background-image: url(imagenes/cherry-blossom-6068004_1280.jpg) ;
+    background-size: cover;
+    background-position: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*.banner::before{
+    content:'';
+    background: rgba(221, 171, 233, 0.6);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    overflow: hidden;
+}
+*/
+
+
+.sobre-mi{
+    display: flex;
+   /* border: 2px solid black;*/
+    margin: auto;
+    position: relative;
+}
+
+.contenedor-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    /*border: 2px solid rgb(14, 29, 236);*/
+  
+}
+.foto{
+   border-radius: 50%;
+    height: 300px;
+    box-shadow: 0px 0px 20px #ff9ec2;
+}
+.info{
+    font-size: large;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 50px;
+    /*border: 2px solid rgb(23, 107, 30);*/
+    padding: 45px;
+    BACKGROUND-COLOR: rgba(197, 51, 149, 0.9);
+    border-bottom-right-radius: 44px;
+    border-top-left-radius: 44px;
+    color: white;
+
+}
+/*
+html {
+    width: 100vw;
+}*/
+/*RESPONSIVE*/
+@media (max-width:480px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        background-color:  rgb(255, 158, 194,0.95);
+        height:359px;
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.5s;
+        border-bottom-left-radius: 44px;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px ;
+    }
+    
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    .menu a:hover,
+    .mostrar-menu,
+    .esconder-menu{
+    background-color: rgba(235, 235, 235, 0);
+    font-size: 30px;
+    }    
+
+    /*HOLA*/
+
+    .sobre-mi{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .info p{
+        font-size: medium;
+        font-weight: bold;
+    } 
+   
+
+}
+
+@media (max-width:768px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        background-color:  rgb(255, 158, 194,0.95);
+        height:359px;
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.5s;
+        border-bottom-left-radius: 44px;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px ;
+    }
+    
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    .menu a:hover,
+    .mostrar-menu,
+    .esconder-menu{
+    background-color: rgba(235, 235, 235, 0);
+    font-size: 30px;
+    }    
+
+    
+    .sobre-mi{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+/*.banner{
+    height: auto;
+  /*  border: 2px solid rgb(243, 9, 9);/*
+    background-image: url(imagenes/cherry-blossom-6068004_1280.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.banner::before{
+    content:'';
+    background: rgba(221, 171, 233, 0.6);
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+

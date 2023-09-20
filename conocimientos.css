@@ -1,0 +1,97 @@
+
+.conocimientos{
+    /*background-image: url(imagenes/pexels-sl-wong-1023953.jpg);
+    background-size: cover;
+    background-position: center;*/
+    background-color:  rgb(255, 158, 194,0.8);
+   /* border: 2px solid #08ff6b;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contenedor-diseño{
+    flex-direction: column;
+    justify-content: space-around;
+    /*border: 1px solid rgb(243, 15, 175);*/
+    /*border-radius: 15px;*/
+    margin: 12px;
+    padding: 11px;
+    BACKGROUND-COLOR: rgba(255, 255, 255, 0.747);
+    padding: 10px 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.programas-diseño{
+    /*border: 1px solid tomato;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3px 10px;
+}
+
+.contenedor-programacion{
+    flex-direction: column;
+    justify-content: space-around;
+    /*border: 1px solid rgb(243, 15, 175);*/
+    /*border-radius: 15px;*/
+    margin: 12px;
+    padding: 11px;
+    BACKGROUND-COLOR: rgba(255, 255, 255, 0.747);
+    padding: 10px 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.programas-programacion{
+    /*border: 1px solid tomato;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.programa{
+    /*margin: 20px;*/
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    /*border: 1px solid #ea08ff;
+    background-color: rgba(137, 43, 226, 0.178);
+    border-radius: 15px ;*/
+}
+.img-programa{
+    width: 68px;
+}
+.conocimientos-h3{
+    text-align: left;
+    font-weight: bold;
+    font-size: x-large;
+    font-style: italic;
+    margin-left: 40px;
+    text-shadow:  3px 3px 2px rgba(252, 95, 205, 0.74);
+    color: #080808;
+    
+}
+
+@media (max-width:480px){
+    
+    .programas-diseño{
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .programas-programacion{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
+@media (max-width:768) {
+    .programa{
+        width: auto;
+    }
+}

@@ -1,0 +1,190 @@
+.contacto{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*.contenedor-contacto{
+  background: rgba(255, 158, 194, 0.747);
+    width: 70%;
+    margin: 30px auto;
+    border: 1px solid rgb(229, 144, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 47px;
+}
+.info-contacto{
+  
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+.tabla-centrada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    margin: 10px;
+}
+.tabla{
+    margin: auto;
+    text-align: left;
+}
+
+.caja-contacto {
+    width: 50%;
+    height: 300px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+     border: 2px solid blue;
+}
+.caja-contacto div{
+  border: 2px solid blue;
+    margin: 13px;
+}
+
+.social-icons{
+    display: inline-flex;
+    justify-content:space-around;
+ 
+}
+.iconos-contacto{
+    font-size: xx-large;
+    background-color:rgb(152, 47, 140);
+    background-color: #445ee5;
+    color: rgb(245, 245, 245);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+*/
+.contenedor-contacto{
+    background-color: rgba(255, 158, 194, 0.747);
+    width: 70%;
+    margin: 30px auto;
+    border: 1px solid rgb(229, 144, 255);
+    display: flex;
+    border-radius: 47px;
+}
+
+.info-contacto{
+  /*  border: 2px solid blue;*/
+    width: 50%;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+.mensaje{
+   /* border: 1px solid red;*/
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin: 10px; 
+}
+.contenedor-tabla{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+/*border: 1px solid green;*/
+}
+.tabla{
+   /* border: 1px solid;*/
+    margin: 5px;
+}
+.tabla td{
+    line-height: 4%;
+    text-align: left;
+}
+
+.caja-contacto {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+ /*   border: 2px solid blue;*/
+    
+}
+.caja-contacto div{
+  /* border: 2px solid blue;*/
+    margin: 4px;
+}
+.social-icons{
+    display: inline-flex;
+}
+.iconos-contacto{
+    font-size: xx-large;
+    background-color:rgb(152, 47, 140);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+
+@media (max-width:480px){
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .info-contacto{
+       /* border: 2px solid rgb(0, 255, 255);*/
+        width: 90%;
+        height: 300px;
+        display: flex;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        padding-top: 50px;
+        justify-content: start;
+    }
+    .caja-contacto {
+        width: 90%;
+        margin-bottom: 20px;
+       /* border: 2px solid rgb(0, 238, 255);*/
+    }
+}
+   
+@media (max-width:768px) {
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .info-contacto{
+       /* border: 2px solid rgb(0, 255, 255);*/
+        width: 90%;
+        height: 300px;
+        display: flex;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        padding-top: 50px;
+        justify-content: start;        
+    }
+    .caja-contacto {
+        width: 90%;
+        margin-bottom: 20px;
+        margin-top: -70px;
+       /* border: 2px solid rgb(0, 238, 255);*/
+    }
+   
+}

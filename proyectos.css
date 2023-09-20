@@ -1,0 +1,193 @@
+.proyectos{
+    background-color:rgb(253, 252, 253,0.7); 
+/*   background-image: url(imagenes/pexels-madison-inouye-1831234.jpg);
+   background-size: cover;
+   background-position: center;*/
+  /*  border: 2px solid ;*/
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /*background-image: url(imagenes/pexels-sl-wong-1023953.jpg);
+    background-size: cover;
+    background-position: center;*/
+    overflow-x: hidden;
+}
+
+.contenedor-proyectos2{
+    width: 98%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*border: 1px solid;*/
+    /*background-color: aqua;*/
+}
+.tarjeta-contenedor{
+    margin: 30px;
+    perspective: 800;
+}
+.tarjeta{
+    width: 400px;
+    height: 400px;
+    
+    background: rgb(255,255,255);
+background: linear-gradient(265deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9023984593837535) 100%);
+
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.7s;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+
+    border-radius: 10%;
+
+}
+.adelante, .dorso{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.dorso{
+    transform: rotateY(180deg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+   /* color: rgb(223, 40, 40);*/
+    font-family: sans-serif;
+   
+}
+.tarjeta-contenedor:hover .tarjeta{
+    transform: rotateY(180deg);
+
+}
+.adelante{
+    width: 100%;
+}
+.card1{
+    background-image: url(imagenes/simpledev.png);
+    background-size: cover;
+    border-radius: 10%;
+}
+.card2{
+    background-image: url(imagenes/CARD2D.png);
+    background-size:  cover;
+    border-radius: 10%;
+
+}
+.card3{
+    background-image: url(imagenes/CARD3D.png);
+    background-size: cover;
+    border-radius: 10%;
+}
+.card4{
+    background-image: url(imagenes/CARD4D.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+.card5{
+    background-image: url(imagenes/rollearte.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+.card6{
+    background-image: url(imagenes/urama.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+
+.card11{
+    background-image: url(imagenes/CARD2A.png);
+    background-size: cover;
+    border-radius: 10%;
+
+}
+.card33{
+    background-image: url(imagenes/CARD3A.png);
+    background-size: cover;
+    border-radius: 10%;
+}
+.card44{
+    background-image: url(imagenes/CARD4A.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+.card55{
+    background-image: url(imagenes/claseskids.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+.card66{
+    background-image: url(imagenes/aros.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+.titulo-card1{
+    color: aliceblue;
+}
+.text-card1{
+    color: #fffcfc;
+}
+.btn-card1{
+    background-color: rgb(0, 132, 255);
+    color: #fffcfc;
+    border-radius: 66px;
+    padding: 15px;
+}
+
+.titulo-card2{
+color: rgb(247, 13, 215);
+}
+.text-card2{
+    color: #050505;
+}
+.btn-card2{
+    background-color: rgb(255, 0, 255);
+    color: #fffcfc;
+    border-radius: 66px;
+    padding: 15px;
+}
+
+.titulo-card3{
+    color: aliceblue;
+}
+.text-card3{
+    color: #fffcfc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.btn-card3{
+    background-color: rgb(61, 2, 116);
+    color: rgb(253, 253, 253);
+    border-radius: 66px;
+    padding: 15px;
+}
+
+
+@media (max-width:480px){
+  
+    .programa{
+        width: 40%;
+    }
+    .tarjeta{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width:768) {
+    .programa{
+        width: auto;
+    }
+    .tarjeta{
+        width: 300px;
+        height: 300px;
+    }
+}
